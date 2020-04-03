@@ -1,0 +1,25 @@
+{% extends "mainApp/wrapper.html" %}
+{% block content %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
+<br/>
+    <h1>Regestration</h1>
+    <form method="POST">
+        {% csrf_token %}<br>
+        {{ form|crispy }}
+        <input type="submit" />
+    </form>
+    <br/>
+    <br/>
+    <br/>
+    <br/><br/>
+    <br/>
+    <br/>
+    <br/>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "webexample/wrapper.html" %}
+{% block content %}
+{% load staticfiles %}
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'webexample:detail' question.id %}">Vote again?</a>
+{% endblock content %}

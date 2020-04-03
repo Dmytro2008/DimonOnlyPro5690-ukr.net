@@ -1,0 +1,7 @@
+{% extends 'mainApp/wrapper.html' %}
+{% load staticfiles %}
+{% block content %}
+  {% for val in contact%}
+    <p>{{val}}</p>
+    {% endfor %}
+{% endblock %}

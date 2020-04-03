@@ -1,0 +1,70 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% block content %}
+{% load staticfiles %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 col-sm-12">
+           <p><h1>H&M</h1></p>
+        <p>Один из самых популярных брендов масс-маркета не остался в стороне экологической проблемы. Компания запустила акцию по сбору и переработке одежды «Новая жизнь моды». Каждый желающий может принести ненужную одежду в любой из магазинов H&M. Причем качество и материал одежды значения не имеют. Магазин отправляет одежду на переработку или повторное использование, а участники акции получают вместо захламленного шкафа ваучер на следующую покупку.</p>
+  </div>
+  <div class="col-md-6 col-xs-12 col-sm-12">
+    <img src="{% static 'mainApp/kartinki/9.jpeg' %}" style="padding-right:60px" width="620" height="380"  class="img-fluid" alt="Reduse">
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 col-sm-12">
+      <img src="{% static 'mainApp/kartinki/10.jpeg' %}" style="padding-right:60px" width="620" height="380"  class="img-fluid" alt="Reduse">
+    </div>
+    <div class="col-md-6 col-xs-12 col-sm-12">
+			     <p><h1>Amour vert</h1></p>
+        <p>Под маркой Amour vert создается экологически чистая универсальная одежда из натуральных тканей. Компания работает с эксклюзивными поставщиками и старается не производить одежды больше, чем может продать. За счет чего еще существеннее сокращает пагубное влияние на экологию.
+          Amour vert при поддержки организации American Forest запустили акцию: при покупке трех вещей они обещают посадить дерево в северной Америке. На сайте есть счетчик, благодаря которому можно следить за тем, сколько деревьев уже было посажено.</p>
+
+
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+    <h1>Итого</h1>
+    <p>Мы не раз слышали, что на крупных производствах не всегда достойные условия работы. Осознанная мода пропагандирует гуманное отношение к человеческому труду и заботу о здоровье рабочих на фабриках. Активисты настаивают на том, что нужно раскрывать информацию обо всех аспектах одежды и со временем добиться абсолютной прозрачности в компаниях.
+      Экологические тенденции медленно, но верно набирают обороты. Не все бренды пока готовы отказаться от вредных способов производства, но мы думаем, что это дело времени, и индустрия моды избавится от статуса одной из самых вредных для экологии.</p>
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+<nav aria-label="Page navigation" class="text-center">
+  <ul class="pagination justify-content-center">
+    <li>
+      <a href="/mainApp/companies1" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="/mainApp/companies">1</a></li>
+    <li><a href="/mainApp/companies1">2</a></li>
+    <li><a href="/mainApp/companies2">3</a></li>
+    <li>
+      <a href="/mainApp/companies2" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

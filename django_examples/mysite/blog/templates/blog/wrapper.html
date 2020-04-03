@@ -1,0 +1,146 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="shortcut icon" href="{% static 'mainApp/images/icon.png' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{%static 'css/grayscale.min.css'%}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/example.css'%}">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="#"class="dropdown-toggle" data-toggle="dropdown">Сервисы и советы<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/mainApp/companies">Компании помощи</a></li>
+              <li><a href="/mainApp/rules">Легкие правила</a></li>
+              <li><a href="#">...</a></li>
+            </ul>
+          </li>
+          <li><a href="/webexample/">Вопросы</a></li>
+          <li><a href="/mainApp/cataclism">Катаклизмы</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-center">
+        	<li><a href="#"><h4>Ecologysaver</h4></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/mainApp/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="/mainApp/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="/mainApp/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <button class="btn-top" title="Go to top">Top <span class="glyphicon glyphicon-chevron-up"></span></button>
+
+{% block content %}
+{%endblock %}
+
+    <section id="signup" class="signup-section">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+           <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+           <form class="form-inline d-flex">
+             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+           </form>
+
+         </div>
+       </div>
+     </div>
+    </section>
+
+    <section class="contact-section bg-black">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2 fa-2x"></i>
+                <h4 class="text-uppercase m-0 text-white">Address</h4>
+                <hr class="my-4">
+                <div class="small text-white">Igor Sikorsky Kyiv Polytechnic Institute, Kyiv UA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2 fa-2x"></i>
+                <h4 class="text-uppercase m-0 text-white">Email</h4>
+                <hr class="my-4">
+                <div class="small text-white">
+                  <a href="#">boroznuk20081999@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2 fa-2x"></i>
+                <h4 class="text-uppercase m-0 text-white">Phone</h4>
+                <hr class="my-4">
+                <div class="small text-white">+38(073)-133-90-07</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social d-flex justify-content-center navbar-text">
+          <a href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-telegram fa-2x"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Copyright &copy; Your Website 2018
+      </div>
+    </footer>
+    <script src="{% static 'js/button-top.js' %}"></script>
+  </body>
+</html>

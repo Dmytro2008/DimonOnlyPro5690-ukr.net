@@ -1,0 +1,89 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% block content %}
+{% load staticfiles %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 col-sm-12">
+      <img src="{% static 'mainApp/kartinki/5.jpeg' %}" style="padding-right:60px" width="620" height="380"  class="img-fluid" alt="Reduse">
+    </div>
+    <div class="col-md-6 col-xs-12 col-sm-12">
+			     <p><h1>Patagonia</h1></p>
+        <p>Американский бренд особенно известен среди поклонников активного отдыха. Основатель компании Ивон Шуинар с самого начала ответственно подошел к защите окружающей среды. Бренд производит одежду и аксессуары из экологичных органических материалов. Решив, видимо, что это капля в море, Ивон инициировал создание организации «1% для планеты», члены которой ежегодно жертвуют 1% от продаж своих компаний на решение экологических проблем.</p>
+
+
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 col-sm-12">
+           <p><h1>Fendi</h1></p>
+        <p>Если зайти на сайт компании, можно увидеть кодекс поведения, который соответствует понятиям устойчивой моды. Fendi руководствуется принципом уважения к труду своих сотрудников, заботой об их безопасности и здоровье. Бренд категорически не приемлет детский труд, стремится к прозрачности компании. Обойти стороной заботу об окружающей среде компания тоже не смогла: модный дом стремится использовать новейшие технологии производства и минимизировать вред, наносимый природе. В 2017 году    Fendi стал лауреатом премии The green carpet fashion awards как самый социально ответственный бренд.</p>
+  </div>
+  <div class="col-md-6 col-xs-12 col-sm-12">
+    <img src="{% static 'mainApp/kartinki/6.jpeg' %}" style="padding-right:60px" width="620" height="380"  class="img-fluid" alt="Reduse">
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 col-sm-12">
+      <img src="{% static 'mainApp/kartinki/7.jpeg' %}" style="padding-right:60px" width="620" height="380"  class="img-fluid" alt="Reduse">
+    </div>
+    <div class="col-md-6 col-xs-12 col-sm-12">
+			     <p><h1>Adidas</h1></p>
+        <p>Мировой гигант в сфере спортивной одежды принимает посильное участие в изменении экологической ситуации. Фирма отказалась от пластиковых пакетов в пользу бумажных, сотрудничает со Стеллой Маккартни и с нью-йоркской организацией Parley for the Oceans.
+           Фирма презентовала кроссовки из биоразлагаемых материалов и совместно с Parley for the Oceans выпустила спортивную обувь из переработанного океанического мусора. Также бренд инициировал благотворительное спортивное движение в пользу защиты океана.</p>
+
+
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 col-sm-12">
+           <p><h1>Viktor & Rolf</h1></p>
+        <p>Тандем нидерландских дизайнеров Виктор Хорстинг и Рольф Сноерен поощряют в своих коллекциях повторное использование материалов. Ткани, оставшиеся с прошлых показов, можно увидеть на самых последних моделях, созданных дизайнерами. Помимо очевидной демонстрации своей точки зрения, Виктор и Рольф делают метафоричные отсылки к экологии во время презентаций своей одежды. Например, в 2017 модели вышли на показ в костюмах тряпичных кукол. Такое решение должно было напомнить публике об экологической ответственности.К 25-и летию бренда дизайнеры решили воскресить модели из своих предыдущих коллекций и на подиуме можно было увидеть три культовых наряда от Viktor & Rolf.</p>
+  </div>
+  <div class="col-md-6 col-xs-12 col-sm-12">
+    <img src="{% static 'mainApp/kartinki/8.jpeg' %}" style="padding-right:60px" width="620" height="380"  class="img-fluid" alt="Reduse">
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<nav aria-label="Page navigation" class="text-center">
+  <ul class="pagination justify-content-center">
+    <li>
+      <a href="/mainApp/companies" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="/mainApp/companies">1</a></li>
+    <li><a href="/mainApp/companies1">2</a></li>
+    <li><a href="/mainApp/companies2">3</a></li>
+    <li>
+      <a href="/mainApp/companies2" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endblock %}

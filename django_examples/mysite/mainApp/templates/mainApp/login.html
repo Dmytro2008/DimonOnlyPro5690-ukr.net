@@ -1,0 +1,27 @@
+{% extends "mainApp/wrapper.html" %}
+{% block content %}
+{% load staticfiles %}
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="text-center">
+    <h1>Login</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" />
+    </form>
+</div>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
+<br/>
+{% endblock content %}
